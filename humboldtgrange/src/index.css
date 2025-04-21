@@ -90,6 +90,10 @@ p {
     gap: 0.5rem;
     align-items: center;
   }
+
+  .subscribe-form-div {
+    width: 90%;
+  }
   
 }
 
