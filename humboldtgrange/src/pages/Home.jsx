@@ -1,6 +1,7 @@
 import React from "react";
 import PrimaryButton from '../components/PrimaryButton.jsx';
 import { Helmet } from 'react-helmet';
+import SubscribeForm from '../components/SubscribeForm.jsx';
 
 export function Home () {
     return (
@@ -31,8 +32,11 @@ export function Home () {
                     and lifelong learning.
                 </p>
                 <PrimaryButton to="/membership">Become a Member Today</PrimaryButton>
-            
             </div>
+            <div className="subscribe-form-div">
+                <SubscribeForm />
+            </div>
+            
         </>
            
     )
