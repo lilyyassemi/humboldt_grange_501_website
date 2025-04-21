@@ -26,7 +26,7 @@ export function Home () {
                 <h2>Join Our Community</h2>
                 <p className="p2"> Grange membership is affordable, family-friendly, and full of benefits for everyone. 
                     Active members enjoy <strong>discounted rental rates</strong> for our Grange Hall, 
-                    access <span><a href="https://www.nationalgrange.org/our-values/benefits-to-members/" target="_blank">National Grange benefits</a></span>, 
+                    access <span><a href="https://www.nationalgrange.org/our-values/benefits-to-members/" target="_blank" rel="noreferrer">National Grange benefits</a></span>, 
                     leadership and civic engagement opportunities, and the chance to participate in social events, service projects, 
                     and lifelong learning.
                 </p>
