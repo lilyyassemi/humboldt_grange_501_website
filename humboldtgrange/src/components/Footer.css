@@ -47,3 +47,21 @@
     text-decoration: underline;
   }
   
+  /* Make footer buttons bigger on mobile */
+@media (max-width: 768px) {
+    .footer-buttons {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+      }
+  
+    .footer-btn {
+      font-size: 1.25rem;
+      padding: 1rem 2rem;
+      text-align: center;
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  

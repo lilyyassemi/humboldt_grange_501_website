@@ -166,3 +166,15 @@
   }
 }
 
+.close-btn {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.5rem;
+  font-size: 2rem;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10001;
+}
+

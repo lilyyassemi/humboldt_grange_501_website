@@ -57,6 +57,7 @@ export default function Navbar() {
       {/* Mobile Menu Overlay */}
       {mobileMenuOpen && (
         <div className="mobile-menu">
+          <button className="close-btn" onClick={closeMobileMenu}>&times;</button>
           <Link to="/" onClick={closeMobileMenu}>Home</Link>
           <Link to="/about" onClick={closeMobileMenu}>About Us</Link>
           <Link to="/about/history" onClick={closeMobileMenu}>Our History</Link>
