@@ -10,7 +10,7 @@ export function Home () {
 
             <div className="homepage-floral-welcome">
                 <img src="./images/homepage_floral_accent_left.png" alt="Left floral accent" className="floral-accent left" />
-                <h1 className="body-h1">Rooted in Community, Growing Together</h1>
+                <h1 className="body-h1">Rooted in Community, Growing Together.</h1>
                 <img src="./images/homepage_floral_accent_right.png" alt="Right floral accent" className="floral-accent right" />
             </div>
 
@@ -21,13 +21,13 @@ export function Home () {
                 <br/>
                 <br/>
                     Whether you're passionate about sustainable agriculture, interested in community service, or looking for a 
-                    place for your family to connect and grow—there's a place for you at the Humboldt Grange #501.
+                    place for you or your family to connect and grow—there's a place for you at the Humboldt Grange #501.
                 </p>
                 <div className="homepage-welcome-text-subsection">
                     <h2>Help Us Grow Our Community</h2>
                     <p className="p2"> Grange membership is affordable, family-friendly, and full of benefits for everyone. 
-                        Active members enjoy <strong>discounted rental rates</strong> for our Grange Hall, 
-                        access <span><a href="https://www.nationalgrange.org/our-values/benefits-to-members/" target="_blank" rel="noreferrer">National Grange benefits</a></span>, 
+                        Active members enjoy <strong><a href="/rentals" target="_blank" rel="noreferrer">discounted rental rates</a></strong> for our Grange Hall, 
+                        access to <strong><a href="https://www.nationalgrange.org/our-values/benefits-to-members/" target="_blank" rel="noreferrer">National Grange benefits</a></strong>, 
                         leadership and civic engagement opportunities, and the chance to participate in social events, service projects, 
                         and lifelong learning.
                     </p>

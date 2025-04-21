@@ -6,6 +6,10 @@
   --background-color: #F9F6F1;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -46,7 +50,8 @@ p {
 }
 
 .floral-accent {
-  width: 120px;
+  width: 100%;
+  max-width: 120px;
   height: auto;
 }
 
@@ -80,7 +85,7 @@ p {
   align-items: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .p1, .p2{
     font-size: 1.2rem;
   }
@@ -121,7 +126,7 @@ p {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .calendar-full {
     display: none;
   }

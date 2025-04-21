@@ -1,11 +1,16 @@
 import React from "react";
 import { Helmet } from 'react-helmet';
+import { useEffect } from 'react';
 
 export function Contact () {
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }, []);
+
     return (
         <>
             <Helmet><title>Contact Us</title></Helmet>
-            <div className="contact-info">
+            <div className="contact-info" id="contactTop">
                 <h1>Contact Us</h1>
                 <p className="p2">We'd love to hear from you! <br/> 
                                  Whether you have a question about membership, events, rentals, 

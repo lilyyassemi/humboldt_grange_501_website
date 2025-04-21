@@ -157,7 +157,7 @@
 }
 
 /* Media query for small screens */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .nav-links {
     display: none;
   }
@@ -181,7 +181,7 @@
 
 /* Makes Hamburger go on righthand side initally */
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   /* Homepage before scrolling */
   .navbar:not(.sticky):has(.hamburger) {
     justify-content: center;

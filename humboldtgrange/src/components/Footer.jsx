@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="footer-content">
         <div className="footer-buttons">
             <Link to="/membership" className="footer-btn">Become a Member</Link>
-            <Link to="/contact" className="footer-btn">Contact Us</Link>
+            <Link to="/contact#contactTop" className="footer-btn">Contact Us</Link>
         </div>
         <p>© {new Date().getFullYear()} Humboldt Grange #501. All rights reserved.</p>
       </div>
