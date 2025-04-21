@@ -24,6 +24,10 @@ p {
   font-size: 1.7rem;
 }
 
+.p2 {
+  font-size: 1.3rem;
+}
+
 .homepage-floral-welcome h1 {
   text-align: center;
   padding-left: 25px;
@@ -47,6 +51,7 @@ p {
 .homepage-welcome-text {
   width: 95%;
   margin: auto;
+  text-align: center;
 }
 
 .homepage-welcome-text p {
@@ -54,7 +59,7 @@ p {
 }
 
 @media screen and (max-width: 768px) {
-  .p1 {
+  .p1, .p2{
     font-size: 1.2rem;
   }
 
