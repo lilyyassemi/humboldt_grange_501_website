@@ -44,9 +44,13 @@ p {
   height: auto;
 }
 
+.homepage-welcome-text {
+  width: 95%;
+  margin: auto;
+}
+
 .homepage-welcome-text p {
-  text-align: center;
-  margin: 5px; 
+  text-align: center; 
 }
 
 @media screen and (max-width: 768px) {
