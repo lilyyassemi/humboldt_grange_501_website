@@ -21,9 +21,10 @@ p {
   font-family: var(--font-body);
 }
 
-.p1 {
+.p1, h2 {
   font-size: 1.7rem;
 }
+
 
 .p2 {
   font-size: 1.3rem;
@@ -53,6 +54,14 @@ p {
   width: 95%;
   margin: auto;
   text-align: center;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage-welcome-text-subsection {
+  width: 80%;
 }
 
 .homepage-welcome-text p {
@@ -107,3 +116,20 @@ p {
   margin: auto;
 }
 
+/* CALENDAR STYLING */ 
+.calendar-agenda {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .calendar-full {
+    display: none;
+  }
+  .calendar-agenda {
+    display: block;
+  }
+  .calendar-agenda-div {
+    width: 90%;
+    margin: auto;
+  }
+}
