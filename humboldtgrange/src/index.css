@@ -19,3 +19,55 @@ h1, h2, h3, h4, h5, h6 {
 p {
   font-family: var(--font-body);
 }
+
+.p1 {
+  font-size: 1.7rem;
+}
+
+.homepage-floral-welcome h1 {
+  text-align: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 2.5rem;
+}
+
+.homepage-floral-welcome {
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.floral-accent {
+  width: 120px;
+  height: auto;
+}
+
+.homepage-welcome-text p {
+  text-align: center;
+  margin: 5px; 
+}
+
+@media screen and (max-width: 768px) {
+  .p1 {
+    font-size: 1.2rem;
+  }
+
+  .homepage-floral-welcome h1 {
+    font-size: 1.5rem;
+    padding: 0px;
+  }
+
+  .floral-accent {
+    height: 45px;
+    width: auto;
+  }
+
+  .homepage-floral-welcome {
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+}
+
