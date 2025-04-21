@@ -1,9 +1,11 @@
 import React from "react";
 import PrimaryButton from '../components/PrimaryButton.jsx';
+import { Helmet } from 'react-helmet';
 
 export function Home () {
     return (
         <>
+        <Helmet><title>Home - Humboldt Grange</title></Helmet>
 
             <div className="homepage-floral-welcome">
                 <img src="./images/homepage_floral_accent_left.png" alt="Left floral accent" className="floral-accent left" />

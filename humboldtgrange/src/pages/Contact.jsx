@@ -1,8 +1,10 @@
 import React from "react";
+import { Helmet } from 'react-helmet';
 
 export function Contact () {
     return (
         <>
+            <Helmet><title>Contact Us</title></Helmet>
             <div className="contact-info">
                 <h1>Contact Us</h1>
                 <p className="p2">We'd love to hear from you! <br/> 
