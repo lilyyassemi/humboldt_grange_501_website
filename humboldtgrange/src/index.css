@@ -58,6 +58,10 @@ p {
   text-align: center; 
 }
 
+.homepage-welcome-text a{
+  color: #2e7ba5; 
+}
+
 @media screen and (max-width: 768px) {
   .p1, .p2{
     font-size: 1.2rem;
@@ -80,3 +84,12 @@ p {
   
 }
 
+
+
+/* CONTACT INFO PAGE STYLES */
+
+.contact-info {
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}

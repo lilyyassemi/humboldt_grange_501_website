@@ -1,6 +1,8 @@
 import React from 'react';
 import './Footer.css';
 import { Link } from 'react-router-dom';
+import { FaFacebookSquare } from 'react-icons/fa';
+
 
 export default function Footer() {
   return (
@@ -12,6 +14,22 @@ export default function Footer() {
         </div>
         <p>© {new Date().getFullYear()} Humboldt Grange #501. All rights reserved.</p>
       </div>
+      <a
+        href="https://www.facebook.com/humboldtgrange501"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          display: 'inline-flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          width: '28px',
+          height: '28px',
+          backgroundColor: 'white',
+          borderRadius: '4px',
+          textDecoration: 'none',
+        }}>
+            <FaFacebookSquare size={34} color="#1877f2" />
+        </a>
     </footer>
   );
 }
