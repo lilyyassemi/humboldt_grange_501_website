@@ -178,3 +178,23 @@
   z-index: 10001;
 }
 
+/* Makes Hamburger go on righthand side initally */
+
+@media (max-width: 768px) {
+  /* Homepage before scrolling */
+  .navbar:not(.sticky):has(.hamburger) {
+    justify-content: center;
+    position: relative;
+  }
+
+  .navbar:not(.sticky) {
+    min-height: 64px; /* or whatever feels right */
+  }
+
+  .navbar:not(.sticky) .hamburger {
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
