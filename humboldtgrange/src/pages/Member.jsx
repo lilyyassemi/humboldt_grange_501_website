@@ -4,7 +4,7 @@ export function Member () {
     return (
         <>
             <Helmet><title>Become a Member</title></Helmet>
-            <h1>Member</h1>
+            <h1>Become a Member</h1>
         </>
     )
 }
