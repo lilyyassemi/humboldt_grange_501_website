@@ -1,0 +1,54 @@
+/* .header-image h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 0;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+  }
+*/ 
+.header-container {
+    position: relative;
+    width: 100%;
+    height: 500px; /* or whatever height works */
+    overflow: hidden;
+  }
+  
+  .header-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+    pointer-events: none;
+  }
+  
+  .logo-large {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 150px;
+    transition: all 0.3s ease-in-out;
+    pointer-events: auto;
+    z-index: 10;
+  }
+  
+  /* Shrink and move logo when sticky navbar appears */
+  .sticky .logo-large {
+    width: 60px;
+    top: 10px;
+    left: 10px;
+  }
+  

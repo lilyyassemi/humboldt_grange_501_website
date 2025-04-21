@@ -1,0 +1,21 @@
+:root {
+  --font-heading: 'Lora', serif;
+  --font-body: Georgia, serif;
+  --font-small: 'Open Sans', sans-serif;
+  --text-color: #333;
+  --background-color: #F9F6F1;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-small);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+p {
+  font-family: var(--font-body);
+}
