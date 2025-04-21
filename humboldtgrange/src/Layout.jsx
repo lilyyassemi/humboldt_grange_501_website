@@ -1,4 +1,5 @@
-import { Navbar } from "./components/Navbar";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import { Outlet, useLocation } from "react-router-dom";
 import React from "react";
 import './Layout.css';
@@ -9,11 +10,11 @@ export function Layout() {
     return (
         <>
           {isHome && (
-                <div className="header-image">
+                <div className="header-container">
                     <div className="header-image">
-                        <img src="/images/homepage_header_image.jpg" alt="Grange Header" />
+                        <img src="/images/homepage_header_image.jpg" alt="Grange Header" className="background-img"/>
                         <div className="header-overlay">
-                            <img className="logo-large" src="/images/logo.png" alt="Logo" />
+                            <img className="logo-large" src="/images/logo_grange.png" alt="Logo" />
                             <h1>Humboldt Grange #501</h1>
                         </div>
                     </div>
@@ -23,6 +24,7 @@ export function Layout() {
             <main>
                 <Outlet/>
             </main>
+        <Footer />
         </>
     );
 }

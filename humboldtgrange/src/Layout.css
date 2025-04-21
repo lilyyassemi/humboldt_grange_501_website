@@ -1,11 +1,11 @@
-/* .header-image h1 {
+ .header-image h1 {
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 5rem;
     margin: 0;
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
   }
-*/ 
+
 .header-container {
     position: relative;
     width: 100%;
@@ -13,12 +13,14 @@
     overflow: hidden;
   }
   
-  .header-image img {
+/* ONLY style the background image here */
+.background-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
   }
+  
   
   .header-overlay {
     position: absolute;
@@ -29,26 +31,27 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-top: 225px; /* pushes content down */
     color: white;
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
     pointer-events: none;
   }
   
+  /* Logo gets its own sizing */
   .logo-large {
     position: absolute;
     top: 20px;
     left: 20px;
-    width: 150px;
-    transition: all 0.3s ease-in-out;
-    pointer-events: auto;
+    width: 120px;
+    height: auto;
     z-index: 10;
+    transition: all 0.3s ease-in-out;
   }
   
-  /* Shrink and move logo when sticky navbar appears */
+  /* When sticky class is added, shrink the logo */
   .sticky .logo-large {
     width: 60px;
     top: 10px;
     left: 10px;
   }
-  

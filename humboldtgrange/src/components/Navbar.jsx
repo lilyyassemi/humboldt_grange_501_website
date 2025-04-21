@@ -1,40 +1,45 @@
-import { Link } from "react-router-dom"
-import React, {useEffect, useState} from 'react';
+import { Link, useLocation } from "react-router-dom";
+import React, { useEffect, useState } from 'react';
 import './Navbar.css';
 
-export function Navbar({ isSticky }) {
-    const [isScrolled, setIsScrolled] = useState(false);
-  
-    useEffect(() => {
-      if (!isSticky) {
-        const handleScroll = () => {
-          setIsScrolled(window.scrollY > 100);
-        };
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-      }
-    }, [isSticky]);
-  
-    return (
-      <nav className={`navbar ${isSticky || isScrolled ? 'sticky' : ''}`}>
-            <Link to="/">
-                <button>Home</button>
-            </Link>
-            <Link to="/about">
-                <button>About</button>
-            </Link>
-            <Link to="/contact">
-                <button>Contact</button>
-            </Link>
-            <Link to="/membership">
-                <button>Join</button>
-            </Link>
-            <Link to="/rentals">
-                <button>Rentals</button>
-            </Link>
-            <Link to="/schedule">
-                <button>Schedule</button>
-            </Link>
-      </nav>
-    );
-  }
+export default function Navbar() {
+  const [isScrolledPastHeader, setIsScrolledPastHeader] = useState(false);
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
+
+  useEffect(() => {
+    if (isHomePage) {
+      const handleScroll = () => {
+        const headerHeight = 250; // tweak as needed
+        setIsScrolledPastHeader(window.scrollY > headerHeight);
+      };
+      window.addEventListener('scroll', handleScroll);
+      return () => window.removeEventListener('scroll', handleScroll);
+    } else {
+      setIsScrolledPastHeader(true); // Always show sticky on non-homepages
+    }
+  }, [isHomePage]);
+
+  const isSticky = isScrolledPastHeader;
+
+  return (
+    <nav className={`navbar ${isSticky ? 'sticky' : ''}`}>
+      {isSticky && <h1 className="navbar-title">Humboldt Grange #501</h1>}
+      <div className={`nav-links ${isSticky ? 'shifted' : 'centered'}`}>
+        <Link to="/">Home</Link>
+        
+        <div className="nav-item">
+          <Link to="/about" className="dropdown-toggle">About</Link>
+          <div className="dropdown-menu">
+            <Link to="/about/history">Our History</Link>
+            <Link to="/about/meet-the-team">Meet the Team</Link>
+          </div>
+        </div>
+        <Link to="/membership">Join Us</Link>
+        <Link to="/calendar">Calendar</Link>
+        <Link to="/rentals">Rentals</Link>
+        <Link to="/contact">Contact</Link>
+      </div>
+    </nav>
+  );
+}
