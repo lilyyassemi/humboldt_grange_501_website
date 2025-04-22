@@ -1,7 +1,5 @@
 import React from 'react';
 
-{/* NOTE I wrestled with the naming of this forever... just go with it */}
-
 function ThirdButton({ to, children, newTab = false }) {
   return (
     <a
