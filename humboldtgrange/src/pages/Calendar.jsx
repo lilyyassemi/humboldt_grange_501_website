@@ -1,6 +1,11 @@
 import { Helmet } from 'react-helmet';
+import { useEffect } from 'react';
 
 export function Calendar () {
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, []);  
+    
     return (
         <>
             <Helmet><title>Calendar</title></Helmet>

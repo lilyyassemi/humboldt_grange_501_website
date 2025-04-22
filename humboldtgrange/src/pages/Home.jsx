@@ -2,8 +2,13 @@ import React from "react";
 import PrimaryButton from '../components/PrimaryButton.jsx';
 import { Helmet } from 'react-helmet';
 import SubscribeForm from '../components/SubscribeForm.jsx';
+import { useEffect } from 'react';
 
 export function Home () {
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, []);  
+    
     return (
         <>
         <Helmet><title>Home - Humboldt Grange</title></Helmet>
