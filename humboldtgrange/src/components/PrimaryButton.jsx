@@ -1,10 +1,12 @@
 import React from 'react';
 
-function PrimaryButton ({ to, children }) {
+function PrimaryButton({ to, children, newTab }) {
   return (
     <a
       href={to} 
       className="primary-button"
+      target={newTab ? "_blank" : "_self"} // Use "_blank" if newTab is true, otherwise "_self"
+      rel={newTab ? "noopener noreferrer" : ""}
       style={{
         display: 'inline-block',
         padding: '20px 35px',

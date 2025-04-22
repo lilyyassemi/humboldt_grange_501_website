@@ -1,10 +1,14 @@
 import React from 'react';
 
-function TertiaryButton ({ to, children }) {
+{/* NOTE I wrestled with the naming of this forever... just go with it */}
+
+function ThirdButton({ to, children, newTab = false }) {
   return (
     <a
-      href={to} 
-      className="tertiary-button"
+      href={to}
+      target={newTab ? "_blank" : "_self"}
+      rel={newTab ? "noopener noreferrer" : undefined}
+      className="third-button"
       style={{
         display: 'inline-block',
         padding: '10px 20px',
@@ -25,4 +29,4 @@ function TertiaryButton ({ to, children }) {
   );
 }
 
-export default TertiaryButton;
+export default ThirdButton;
