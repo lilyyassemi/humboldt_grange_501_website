@@ -16,19 +16,19 @@ export function Member () {
             <h1>Join the Humboldt Grange</h1>
             <div className="membership-info-div">
                 <h2>Become a Member. Make a Difference.</h2>
-                <p className="p2">Membership in all Community Granges begins at 13 and a half years of age.
-                    Children ages 5 to 13 and a half can join a Community Grange as a Junior Grange member.
-                    Explore the different types of membership below. To join, applications may be submitted
-                    to any active Chartered Community Grange in the State. Each Community Grange will have an
-                    application fee and annual dues.
+                <p className="join p2">Becoming a Grange Member is easy and affordable! 
+                Membership in all the Humboldt Grange #501 begins at 13 and a half years of age. 
+                Children ages 5 to 13 and a half can join a as a Junior Grange member. 
+                <br/>Explore the different types of membership below:
                 </p>
 
-
-                <h2>Start Your Membership Journey Today</h2>
+                <div className="member-steps">
+                    <h2>1. SELECT</h2>
+                    <h2>2. SUBMIT</h2>
+                    <h2>3. ATTEND</h2>
+                    <h2>4. ENJOY</h2>
+                </div>
                
-                <p className="join p2">Becoming a Grange Member is easy and affordable! <br/>
-                All you need to do is select membership type that fits your needs best:
-                </p>
                 <div className="membership-options"> {/* Holds all the info sections */}
 
                     <div className="membership-info-breakdown"> {/* Individual Membership Info */}
@@ -122,26 +122,17 @@ export function Member () {
                     </div>
                 </div>
 
-
-                <h2>Apply Now</h2>
-                <p className="p2">Select your membership type above to fill out the corresponding form
-                    OR download and print this {' '}
-                    <a href="pdfs/application-forms/Family_Member_Application_Humboldt_Grange_501_Espanol.pdf"
-                       target="_blank"
-                       rel="noopener noreferrer">PDF version</a>.
+                <h2>Once you've filled out the application <a href="mailto:humboldt.grange.501@gmail.com" className="mailto">email</a> it to us or bring to a meeting.</h2>
+               
+                <h2>Monthly Grange Meetings</h2>
+                <p className="p2">
+                    We meet in-person on the second Thursday of the month from 6:30 to 8pm. 
                 </p>
-
-
-                <section id="individual-membership-form">
-                    <p>Individual Membership Application Coming Soon</p>
-                </section>
-
-
-                <section id="family-membership-form">
-                    <p>Individual Membership Application Coming Soon</p>
-                </section>
+                
+                <h2>Member Benefits</h2>
+                <p className="p2">Grange Members Enjoy a wide range of benefits. Benefit descriptions coming soon! </p>
+               
             </div>
-           
         </>
 
 

@@ -143,6 +143,11 @@ p {
 
 /* JOIN/MEMBER PAGE STYLING  */ 
 
+.membership-info-div .p2 {
+  width: 80%;
+  margin: auto;
+}
+
 .membership-info-div .p1, 
 .membership-info-div .p2 {
   text-align: center; 
@@ -190,6 +195,19 @@ p {
   gap: 1rem;
 }
 
+.member-steps {
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-between;
+  width: 75%;
+  margin: auto; 
+  margin-bottom: 1rem;
+}
+
+.mailto {
+  color: #333;
+}
+
 @media screen and (max-width: 1090px) {
   .membership-info-breakdown {
     border: 3px solid #2e7ba5;
@@ -198,10 +216,9 @@ p {
     margin-bottom: 3em;
   }
 
-  .membership-options {
+  .membership-options, .member-steps{
     flex-direction: column;
     justify-self: center;
-    
   }
 
 }
