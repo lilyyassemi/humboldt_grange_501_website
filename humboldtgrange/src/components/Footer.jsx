@@ -15,7 +15,7 @@ export default function Footer() {
         <p>© {new Date().getFullYear()} Humboldt Grange #501. All rights reserved.</p>
       </div>
       <a
-        href="https://www.facebook.com/humboldtgrange501"
+        href="https://www.facebook.com/humboldt.grange/"
         target="_blank"
         rel="noopener noreferrer"
         style={{
