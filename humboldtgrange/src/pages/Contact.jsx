@@ -28,21 +28,24 @@ export function Contact () {
                     <a href="mailto:501.humboldt.grange@gmail.com">501.humboldt.grange@gmail.com</a>
                 </p>
 
-                <p className="p2">
-                    <strong>Visit Us:</strong>
-                    <br />
-                    5845 Humboldt Hill Road
-                    <br />
-                    Eureka, California 95503
-                </p>
+                <div className="contact-addresses">
+                    <p className="p2">
+                        <strong>Visit Us:</strong>
+                        <br />
+                        5845 Humboldt Hill Road
+                        <br />
+                        Eureka, California 95503
+                    </p>
 
-                <p className="p2">
-                    <strong>Mailing Address:</strong>
-                    <br />
-                    P.O. Box 6264
-                    <br />
-                    Eureka, California 95502
-                </p>
+                    <p className="p2">
+                        <strong>Mailing Address:</strong>
+                        <br />
+                        P.O. Box 6264
+                        <br />
+                        Eureka, California 95502
+                    </p>
+                </div>
+                
             </div>
         </div>
 

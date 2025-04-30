@@ -125,6 +125,18 @@ p {
   margin: auto;
 }
 
+.contact-addresses {
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 600px) {
+  .contact-addresses {
+    flex-direction: column;
+  }
+}
+
 /* CALENDAR STYLING */ 
 .calendar-agenda {
   display: none;
@@ -142,6 +154,8 @@ p {
     margin: auto;
   }
 }
+
+
 
 
 
@@ -306,3 +320,59 @@ p {
   padding: 1rem;
 }
 
+/*About Page */
+
+.about-header, .about-join{
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.about-join {
+  margin-top: 2rem;
+}
+
+.about-header-text, .about-join-text {
+  max-width: 38%;
+
+}
+
+.about-header-img, .about-join-img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+}
+
+
+
+@media screen and (max-width: 1090px) {
+  .about-header {
+    flex-direction: column;
+  }
+
+  .about-header-img, .about-join-img {
+    width: 100%;
+  }
+
+  .about-header-text, .about-join-text {
+    max-width: 95%;
+  }
+
+  .about-join {
+    flex-direction: column-reverse;
+  }
+
+}
+
+
+.calendar-section {
+  width: 98%;
+  margin: auto; 
+}
+
+.calendar-section iframe {
+  border-radius: 15px;
+}

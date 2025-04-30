@@ -9,7 +9,6 @@ export function Rentals () {
     return (
         <>
             <Helmet><title>Rentals</title></Helmet>
-            (
             <div className="rental-div">
             <h1 className="rental-title">Rent the Humboldt Grange</h1>
 

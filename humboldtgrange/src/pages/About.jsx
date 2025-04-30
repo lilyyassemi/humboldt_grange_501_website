@@ -1,7 +1,7 @@
 
 import { Helmet } from 'react-helmet';
 import { useEffect } from 'react';
-import ThirdButton from '../components/ThirdButton';
+import PrimaryButton from '../components/PrimaryButton';
 
 export function About () {
     useEffect(() => {
@@ -13,23 +13,33 @@ export function About () {
         <Helmet><title>About Us</title></Helmet>
         <div className="about-container">
             <h1>About Us</h1>
-            <h2>What is the Grange?</h2>
-            <p className="p1">
-                Established in 1867, the Grange is the oldest farm organization in the United States. It is a national fraternal organization dedicated to meeting the needs of rural and agricultural communities through grassroots service, advocacy, and leadership training.
-            </p>
-            <h2>Who can Join?</h2>
-            <p className="p1">
-                The Community/Subordinate Grange is open to anyone of good moral character age 14 or older 
-                who cares about their community and the food system. 
-                We have a Junior Grange program for children age 5 to 14, 
-                that has helped the youngest members of the family learn about community values 
-                and citizenship for more than 100 years. 
-            </p>
+            <div className="about-header">
+            <img className="about-header-img" src="./images/grange_nice.jpg" alt="Humboldt Grange #501"/> 
+                <div className="about-header-text">
+                    <h2>What is the Grange?</h2>
+                    <p className="p1">
+                        Established in 1867, the Grange is the oldest farm organization in the United States. It is a national fraternal organization dedicated to meeting the needs of rural and agricultural communities through grassroots service, advocacy, and leadership training.
+                    </p>
+                </div>
+            </div>
+            <div className="about-join">
+                <div className="about-join-text">
+                    <h2>Who can Join?</h2>
+                    <p className="p1">
+                        The Community/Subordinate Grange is open to anyone of good moral character age 14 or older 
+                        who cares about their community and the food system. 
+                        We have a Junior Grange program for children age 5 to 14, 
+                        that has helped the youngest members of the family learn about community values 
+                        and citizenship for more than 100 years. 
+                    </p>
+                </div>
+                <img className="about-join-img" src="./images/grange_nice.jpg" alt="Humboldt Grange #501"/> 
+            </div>
+            
+            
             <p className="p2"><em>Did you know that women have been equal members since the inception of the Grange?</em></p>
-            <ThirdButton to="/membership" >Learn More About Becoming a Member</ThirdButton>
-            <blockquote className="quote">
-                "In essentials, unity; in non-essentials, liberty; in all things, charity." &mdash; Grange Motto
-            </blockquote>
+            <PrimaryButton to="/membership" >Learn More About Becoming a Member</PrimaryButton>
+            
             <h2>AGRICULTURAL   •   COMMUNITY   •   FAMILY   •   FRATERNAL</h2>
 {/*}
 
@@ -81,7 +91,9 @@ export function About () {
                 </div>
 
             </div>
-            
+            <blockquote className="quote">
+                "In essentials, unity; in non-essentials, liberty; in all things, charity." &mdash; Grange Motto
+            </blockquote>
             
         </div>
         </>

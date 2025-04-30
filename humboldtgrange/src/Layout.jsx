@@ -4,6 +4,7 @@ import { Outlet, useLocation } from "react-router-dom";
 import React from "react";
 import './Layout.css';
 
+
 export function Layout() {
     const location = useLocation();
     const isHome = location.pathname === "/";
@@ -28,3 +29,4 @@ export function Layout() {
         </>
     );
 }
+

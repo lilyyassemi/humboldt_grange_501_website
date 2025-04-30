@@ -11,11 +11,11 @@ export function Calendar () {
             <Helmet><title>Calendar</title></Helmet>
             <h1>Calendar of Events</h1>
 
-            <div>
+            <div className="calendar-section">
                 {/* Full View (hidden on small screens) */}
                 <iframe
                     className="calendar-full"
-                    src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=UTC&showPrint=0&title=Humboldt%20Grange%20%23501%20Events&src=MmIwMTI0ZTk0OTVjN2NhZTg4N2VlNWJjNDllYmU3NmJmNDkxNDYwZmJkZjQwYTdhMmUzYTZhMGNiY2Y3NzMzZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23009688&mode=WEEK"
+                    src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=PST&showPrint=0&title=Humboldt%20Grange%20%23501%20Events&src=MmIwMTI0ZTk0OTVjN2NhZTg4N2VlNWJjNDllYmU3NmJmNDkxNDYwZmJkZjQwYTdhMmUzYTZhMGNiY2Y3NzMzZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23009688&mode=WEEK"
                     style={{ border: 'none', width: '100%', height: '600px' }}
                     title="Humboldt Grange #501 Events"
                     frameBorder="0"
@@ -26,7 +26,7 @@ export function Calendar () {
                     <div className="calendar-agenda-div">
                     <iframe
                         className="calendar-agenda"
-                        src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=UTC&showPrint=0&title=Humboldt%20Grange%20%23501%20Events&src=MmIwMTI0ZTk0OTVjN2NhZTg4N2VlNWJjNDllYmU3NmJmNDkxNDYwZmJkZjQwYTdhMmUzYTZhMGNiY2Y3NzMzZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23009688&mode=AGENDA"
+                        src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=PST&showPrint=0&title=Humboldt%20Grange%20%23501%20Events&src=MmIwMTI0ZTk0OTVjN2NhZTg4N2VlNWJjNDllYmU3NmJmNDkxNDYwZmJkZjQwYTdhMmUzYTZhMGNiY2Y3NzMzZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23009688&mode=AGENDA"
                         style={{ border: 'none', width: '100%', height: '600px' }}
                         title="Humboldt Grange #501 Events"
                         frameBorder="0"
