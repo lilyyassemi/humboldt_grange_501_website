@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet';
 import { useEffect } from 'react';
+import '../css/Rentals.css';
 
 export function Rentals () {
     useEffect(() => {

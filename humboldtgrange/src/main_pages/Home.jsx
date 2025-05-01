@@ -3,6 +3,7 @@ import PrimaryButton from '../components/PrimaryButton.jsx';
 import { Helmet } from 'react-helmet';
 import SubscribeForm from '../components/SubscribeForm.jsx';
 import { useEffect } from 'react';
+import '../css/Home.css';
 
 export function Home () {
     useEffect(() => {

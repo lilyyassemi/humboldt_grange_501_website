@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet';
 import LeadershipTeam from '../components/LeadershipTeam';
 import { useEffect } from 'react';
+import '../css/Team.css';
 
 export function Team () {
     useEffect(() => {

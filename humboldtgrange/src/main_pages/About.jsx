@@ -1,7 +1,7 @@
-
 import { Helmet } from 'react-helmet';
 import { useEffect } from 'react';
 import PrimaryButton from '../components/PrimaryButton';
+import '../css/About.css';
 
 export function About () {
     useEffect(() => {

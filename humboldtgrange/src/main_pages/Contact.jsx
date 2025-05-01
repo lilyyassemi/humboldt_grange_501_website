@@ -1,6 +1,7 @@
 import React from "react";
 import { Helmet } from 'react-helmet';
 import { useEffect } from 'react';
+import '../css/Contact.css';
 
 export function Contact () {
     useEffect(() => {

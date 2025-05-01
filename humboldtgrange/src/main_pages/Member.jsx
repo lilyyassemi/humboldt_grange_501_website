@@ -2,7 +2,7 @@ import { Helmet } from 'react-helmet';
 import { useEffect } from 'react';
 import PrimaryButton from '../components/PrimaryButton';
 import ThirdButton from '../components/ThirdButton';
-
+import '../css/Member.css';
 
 export function Member () {
     useEffect(() => {

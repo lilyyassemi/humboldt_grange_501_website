@@ -1,6 +1,6 @@
 import React from 'react';
 import TeamMember from './TeamMember';
-import './LeadershipTeam.css'; 
+import './css/LeadershipTeam.css'; 
 
 const teamData = [
     {

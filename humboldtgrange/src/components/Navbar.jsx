@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import React, { useEffect, useState } from 'react';
-import './Navbar.css';
+import './css/Navbar.css';
 
 export default function Navbar() {
   const [isScrolledPastHeader, setIsScrolledPastHeader] = useState(false);

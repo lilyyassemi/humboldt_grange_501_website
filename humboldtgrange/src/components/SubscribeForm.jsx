@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import supabase from '../SupabaseClient';
-import '../components/SubscribeForm.css'
+import './css/SubscribeForm.css';
 
 export default function SubscribeForm() {
   const [email, setEmail] = useState('');
