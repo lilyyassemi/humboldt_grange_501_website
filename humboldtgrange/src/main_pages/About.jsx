@@ -33,12 +33,12 @@ export function About () {
                         and citizenship for more than 100 years. 
                     </p>
                 </div>
-                <img className="about-join-img" src="./images/grange_nice.jpg" alt="Humboldt Grange #501"/> 
+                <img className="about-join-img" src="./images/spring_board_grange.jpg" alt="Humboldt Grange #501"/> 
             </div>
             
             
             <p className="p2"><em>Did you know that women have been equal members since the inception of the Grange?</em></p>
-            <PrimaryButton to="/membership" >Learn More About Becoming a Member</PrimaryButton>
+            <PrimaryButton to="/membership" >Become a Member Today!</PrimaryButton>
             
             <h2>AGRICULTURAL   •   COMMUNITY   •   FAMILY   •   FRATERNAL</h2>
 {/*}
