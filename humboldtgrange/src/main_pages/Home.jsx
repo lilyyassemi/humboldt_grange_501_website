@@ -41,9 +41,9 @@ export function Home () {
                 </div>
                 
             </div>
-            <div className="subscribe-form-div">
+         {   <div className="subscribe-form-div">
                 <SubscribeForm />
-            </div>
+            </div>}
             
         </>
            

@@ -23,8 +23,8 @@ export function Member () {
                 </p>
 
                 <div className="member-steps">
-                    <h2>1. SELECT</h2>
-                    <h2>2. SUBMIT</h2>
+                    <h2> 1. SELECT</h2>
+                    <h2> 2. SUBMIT</h2>
                     <h2>3. ATTEND</h2>
                     <h2>4. ENJOY</h2>
                 </div>
